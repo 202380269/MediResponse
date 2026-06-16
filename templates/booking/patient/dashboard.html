@@ -4,7 +4,7 @@
 {% block content %}
 <div class="page-header">
     <h1>Welcome back, {{ user.first_name|default:user.username }}!</h1>
-    <a href="{% url 'new_booking' %}" class="btn btn--danger">🚨 Request Ambulance</a>
+    <a href="{% url 'new_booking' %}" class="btn btn--danger"> Request Ambulance</a>
 </div>
 
 {# Active Bookings #}
@@ -35,7 +35,6 @@
         {% endfor %}
     {% else %}
     <div class="empty-state">
-        <div class="empty-state__icon">🚑</div>
         <p>No active requests.</p>
         <a href="{% url 'new_booking' %}" class="btn btn--primary">Make a Request</a>
     </div>

@@ -12,22 +12,18 @@
     <div class="stat-card stat-card--red">
         <div class="stat-card__value">{{ active_count }}</div>
         <div class="stat-card__label">Active Dispatches</div>
-        <div class="stat-card__icon">🚨</div>
     </div>
     <div class="stat-card stat-card--orange">
         <div class="stat-card__value">{{ today_count }}</div>
         <div class="stat-card__label">Today's Bookings</div>
-        <div class="stat-card__icon">📋</div>
     </div>
     <div class="stat-card stat-card--green">
         <div class="stat-card__value">{{ available_ambulances }}</div>
         <div class="stat-card__label">Available Units</div>
-        <div class="stat-card__icon">🚑</div>
     </div>
     <div class="stat-card stat-card--blue">
         <div class="stat-card__value">{% if avg_response %}{{ avg_response }} min{% else %}—{% endif %}</div>
         <div class="stat-card__label">Avg Response Time</div>
-        <div class="stat-card__icon">⏱️</div>
     </div>
 </div>
 

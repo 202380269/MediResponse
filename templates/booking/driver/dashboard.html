@@ -3,14 +3,14 @@
 
 {% block content %}
 <div class="page-header">
-    <h1>🚑 Driver Dashboard</h1>
+    <h1>Driver Dashboard</h1>
     <p>Welcome, {{ driver }}</p>
 </div>
 
 {% if active_booking %}
 <div class="dispatch-alert">
     <div class="dispatch-alert__header">
-        🚨 ACTIVE DISPATCH — Booking #{{ active_booking.pk }}
+        ACTIVE DISPATCH — Booking #{{ active_booking.pk }}
     </div>
     <div class="dispatch-alert__body">
         <div class="detail-grid">

@@ -111,6 +111,7 @@ input, textarea, select { font-family: inherit; font-size: 0.9rem; }
   display: flex;
   min-height: 100vh;
   padding-top: var(--topbar-height);
+  background: var(--color-bg);
 }
 
 /* ─────────────────────────────────────────────
@@ -175,6 +176,7 @@ input, textarea, select { font-family: inherit; font-size: 0.9rem; }
   margin-left: var(--sidebar-width);
   padding: 2rem 2.5rem;
   min-height: calc(100vh - var(--topbar-height));
+  background: var(--color-bg);
 }
 
 /* ─────────────────────────────────────────────

@@ -52,44 +52,44 @@
             {# ADMIN SIDEBAR #}
             <p class="sidebar__section-label">Dispatch</p>
             <a href="{% url 'admin_dashboard' %}" class="sidebar__link {% if request.resolver_match.url_name == 'admin_dashboard' %}active{% endif %}">
-                <span class="sidebar__icon">📊</span> Dashboard
+                <span class="sidebar__icon"></span> Dashboard
             </a>
             <a href="{% url 'admin_bookings_list' %}" class="sidebar__link {% if 'bookings' in request.resolver_match.url_name %}active{% endif %}">
-                <span class="sidebar__icon">📋</span> All Bookings
+                <span class="sidebar__icon"></span> All Bookings
             </a>
             <p class="sidebar__section-label">Fleet</p>
             <a href="{% url 'admin_fleet' %}" class="sidebar__link {% if 'fleet' in request.resolver_match.url_name %}active{% endif %}">
-                <span class="sidebar__icon">🚑</span> Ambulance Fleet
+                <span class="sidebar__icon"></span> Ambulance Fleet
             </a>
             <a href="{% url 'admin_drivers' %}" class="sidebar__link {% if request.resolver_match.url_name == 'admin_drivers' %}active{% endif %}">
-                <span class="sidebar__icon">👤</span> Drivers
+                <span class="sidebar__icon"></span> Drivers
             </a>
             <p class="sidebar__section-label">Records</p>
             <a href="{% url 'admin_patients' %}" class="sidebar__link {% if request.resolver_match.url_name == 'admin_patients' %}active{% endif %}">
-                <span class="sidebar__icon">🏥</span> Patients
+                <span class="sidebar__icon"></span> Patients
             </a>
             <a href="{% url 'admin_reports' %}" class="sidebar__link {% if request.resolver_match.url_name == 'admin_reports' %}active{% endif %}">
-                <span class="sidebar__icon">📈</span> Reports
+                <span class="sidebar__icon"></span> Reports
             </a>
 
             {% elif user.profile.role == 'patient' %}
             {# PATIENT SIDEBAR #}
             <p class="sidebar__section-label">My Care</p>
             <a href="{% url 'patient_dashboard' %}" class="sidebar__link {% if request.resolver_match.url_name == 'patient_dashboard' %}active{% endif %}">
-                <span class="sidebar__icon">🏠</span> Dashboard
+                <span class="sidebar__icon"></span> Dashboard
             </a>
             <a href="{% url 'new_booking' %}" class="sidebar__link {% if request.resolver_match.url_name == 'new_booking' %}active{% endif %}">
-                <span class="sidebar__icon">🚨</span> Request Ambulance
+                <span class="sidebar__icon"></span> Request Ambulance
             </a>
             <a href="{% url 'booking_history' %}" class="sidebar__link {% if request.resolver_match.url_name == 'booking_history' %}active{% endif %}">
-                <span class="sidebar__icon">📜</span> Booking History
+                <span class="sidebar__icon"></span> Booking History
             </a>
 
             {% elif user.profile.role == 'driver' %}
             {# DRIVER SIDEBAR #}
             <p class="sidebar__section-label">Dispatch</p>
             <a href="{% url 'driver_dashboard' %}" class="sidebar__link {% if request.resolver_match.url_name == 'driver_dashboard' %}active{% endif %}">
-                <span class="sidebar__icon">🚑</span> My Dashboard
+                <span class="sidebar__icon"></span> My Dashboard
             </a>
             {% endif %}
 
